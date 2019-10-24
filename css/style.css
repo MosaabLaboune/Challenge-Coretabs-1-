@@ -1,0 +1,198 @@
+*Start Global*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    direction: ltr;
+    font-family: "Tahoma" ,sans-serif;
+    background-color: #f2f2f2;
+}
+.container{
+    width: 1000px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 5px 0px #666;
+    border-radius: 2rem;
+    background-color: #fff;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*End Global*/
+
+.left{
+    width: 50%;
+    float: left;
+    text-align: left;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    margin: 0%;
+    padding: 0%;
+}
+.left .content{
+    margin: 80px auto;
+    padding: 0 100px;
+}
+.left .content h1{
+    position: relative;
+    font-size: 60px;
+    font-weight: bold;
+}
+.left .content h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    left: 0;
+    width: 105px;
+    border-bottom: 10px solid #19e797;
+}
+.left .content #google{
+    color: #999;
+    padding: 10px;
+    display: block;
+    border-radius: 2rem;
+    font-size: 20px;
+    margin: 60px 0 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    width: 280px;
+    box-shadow: 0px 0px 5px 0px #CCC, 0px 5px 3px 0px #CCC;
+    font-weight: bold;
+}
+.left .content #google:hover{
+    box-shadow: 0px 0px 5px 0px #CCC;
+}
+.left .content #google img{
+    max-width: 20px;
+    padding: 0px 0px 0px;
+    margin: 0px 4px 0 0;
+}
+.left .content #or{
+    display: block;
+    color: #999;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+.left .content #or::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    left: 0;
+    width: 100px;
+    border-bottom: 2px solid #DDD;
+}
+.left .content #or::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    left: 200px;
+    width: 100px;
+    border-bottom: 2px solid #DDD;
+}
+.left .content .form{
+    margin-top: 50px;
+}
+.left .content .form label{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #888;
+    margin-left: 20px;
+}
+.left .content .form .error{
+    top: 12px;
+    color: #f83185;
+    font-size: 16px;
+    display: block;
+    margin: -15px 0px 15px 20px;
+}
+.left .content .form input{
+    border: 2px solid transparent;
+    transition: .4s ease-in;
+    color: #7f8285;
+    border-radius: 2rem;
+    font-size: 18px;
+    padding: 10px 10px 10px 15px;
+    width: 270px;
+    height: 30px;
+    outline: none;
+    display: block;
+    background-color: #e9f1f5;
+    margin: 20px 0px 30px;
+}
+.left .content .form  .input-not-vaild{
+    border-color: #f83185;
+}
+.left .content .form input:focus
+{
+    color: black;
+    border-color: #0da5f2;
+}
+.left .content .form #submit{
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-radius: 2rem;
+    font-size: 20px;
+    margin: 40px 0 0;
+    text-align: center;
+    text-decoration: none;
+    transition: background-image .3s ease-in;
+    width: 300px;
+    font-weight: 500;
+    background-image: linear-gradient(to left, #19e797, #0da5f2);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px #19e797c4;
+}
+.left .content .form #submit:hover{
+    animation: back 1s ease infinite;
+}
+@keyframes back {
+    from {background-image: linear-gradient(to right, #19e797, #0da5f2);}
+    to {background-image: linear-gradient(to left, #19e797, #0da5f2);}
+  }
+.left .content .form #info{
+    display: block;
+    margin-top: 45px;
+    font-size: 14px;
+    color: #888;
+    font-weight: bold;
+}
+.left .content .form #info a{
+    color: #0da5f2;
+    margin-left: 3px;
+}
+.left .content .form #info a:hover{
+    text-decoration: none;
+}
+
+.right{
+    width: 50%;
+    float: right;
+    background-image: linear-gradient(to bottom, #0da5f2, #19e797);
+    height: 100%;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: relative;
+}
+.right img{
+    margin: 50px 65px 100px;
+    padding: 100px 0 150px;
+}
+.clear-fix{
+    clear: both;
+}
